@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/lihue/project_4/project_4.runs/synth_1'
+HD_PWD='D:/Repos/fpgaUART_MIPS/UART_MIPS.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

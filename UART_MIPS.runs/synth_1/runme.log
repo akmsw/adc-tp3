@@ -10,8 +10,8 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source top.tcl -notrace
-Command: read_checkpoint -auto_incremental -incremental C:/Users/lihue/project_4/project_4.srcs/utils_1/imports/synth_1/top.dcp
-INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/lihue/project_4/project_4.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
+Command: read_checkpoint -auto_incremental -incremental C:/Users/lihue/UART_MIPS/UART_MIPS.srcs/utils_1/imports/synth_1/top.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/lihue/UART_MIPS/UART_MIPS.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top top -part xc7a100tcsg324-1
 Starting synth_design
@@ -22,162 +22,162 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15636
+INFO: [Synth 8-7075] Helper process launched with PID 5944
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1293.180 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1294.277 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'top' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/top.v:23]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [C:/Users/lihue/project_4/project_4.runs/synth_1/.Xil/Vivado-2896-LiweX-PC/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [C:/Users/lihue/project_4/project_4.runs/synth_1/.Xil/Vivado-2896-LiweX-PC/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6157] synthesizing module 'mips' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mips.v:22]
-INFO: [Synth 8-6157] synthesizing module 'instruction_fetch' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/instruction_fetch.v:22]
+INFO: [Synth 8-6157] synthesizing module 'top' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Repos/fpgaUART_MIPS/UART_MIPS.runs/synth_1/.Xil/Vivado-6848-LiweX-PC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.runs/synth_1/.Xil/Vivado-6848-LiweX-PC/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'mips' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mips.v:22]
+INFO: [Synth 8-6157] synthesizing module 'instruction_fetch' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/instruction_fetch.v:22]
 	Parameter TAM_DATA bound to: 32 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'latch' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'latch' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
 	Parameter BUS_DATA bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'latch' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
-INFO: [Synth 8-6157] synthesizing module 'memoria_de_instruccion' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memoria_de_instruccion.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'memoria_de_instruccion' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memoria_de_instruccion.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'i_read_direc_intruccion' does not match port width (8) of module 'memoria_de_instruccion' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/instruction_fetch.v:56]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_fetch' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/instruction_fetch.v:22]
-INFO: [Synth 8-6157] synthesizing module 'mux' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'latch' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memoria_de_instruccion' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memoria_de_instruccion.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memoria_de_instruccion' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memoria_de_instruccion.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'i_read_direc_intruccion' does not match port width (8) of module 'memoria_de_instruccion' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/instruction_fetch.v:56]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_fetch' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/instruction_fetch.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
 	Parameter BITS_ENABLES bound to: 1 - type: integer 
 	Parameter BUS_SIZE bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mux__parameterized0' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized0' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
 	Parameter BITS_ENABLES bound to: 1 - type: integer 
 	Parameter BUS_SIZE bound to: 1 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized0' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
-INFO: [Synth 8-6157] synthesizing module 'sumador' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/sumador.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized0' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sumador' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/sumador.v:23]
 	Parameter TAM_DATO bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'sumador' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/sumador.v:23]
-INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/hazard_unit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'sumador' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/sumador.v:23]
+INFO: [Synth 8-6157] synthesizing module 'hazard_unit' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/hazard_unit.v:24]
 	Parameter REG_SIZE bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/hazard_unit.v:24]
-INFO: [Synth 8-6157] synthesizing module 'mod_control' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mod_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'hazard_unit' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/hazard_unit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'mod_control' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mod_control.v:23]
 	Parameter FUN_SIZE bound to: 6 - type: integer 
 	Parameter SIGNALS_SIZE bound to: 18 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mod_control' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mod_control.v:23]
-INFO: [Synth 8-6157] synthesizing module 'instruction_decode' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/instruction_decode.v:23]
-INFO: [Synth 8-6157] synthesizing module 'mux__parameterized1' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mod_control' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mod_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'instruction_decode' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/instruction_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized1' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
 	Parameter BITS_ENABLES bound to: 2 - type: integer 
 	Parameter BUS_SIZE bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized1' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
-INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/forwarding_unit.v:24]
-INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/forwarding_unit.v:24]
-INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/register_file.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/register_file.v:3]
-INFO: [Synth 8-6157] synthesizing module 'sing_extender' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/sing_extender.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'sing_extender' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/sing_extender.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'instruction_decode' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/instruction_decode.v:23]
-INFO: [Synth 8-6157] synthesizing module 'latch__parameterized0' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized1' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'forwarding_unit' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/forwarding_unit.v:24]
+INFO: [Synth 8-6155] done synthesizing module 'forwarding_unit' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/forwarding_unit.v:24]
+INFO: [Synth 8-6157] synthesizing module 'register_file' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'register_file' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/register_file.v:3]
+INFO: [Synth 8-6157] synthesizing module 'sing_extender' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/sing_extender.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'sing_extender' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/sing_extender.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'instruction_decode' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/instruction_decode.v:23]
+INFO: [Synth 8-6157] synthesizing module 'latch__parameterized0' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
 	Parameter BUS_DATA bound to: 120 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'latch__parameterized0' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
-INFO: [Synth 8-6157] synthesizing module 'execution' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/execution.v:22]
-INFO: [Synth 8-6157] synthesizing module 'mux__parameterized2' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'latch__parameterized0' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'execution' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/execution.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mux__parameterized2' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
 	Parameter BITS_ENABLES bound to: 1 - type: integer 
 	Parameter BUS_SIZE bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized2' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v:23]
-INFO: [Synth 8-6157] synthesizing module 'alu_control' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/alu_control.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'alu_control' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/alu_control.v:23]
-INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/alu.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/alu.v:3]
-INFO: [Synth 8-6155] done synthesizing module 'execution' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/execution.v:22]
-INFO: [Synth 8-6157] synthesizing module 'latch__parameterized1' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mux__parameterized2' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu_control' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/alu_control.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'alu_control' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/alu_control.v:23]
+INFO: [Synth 8-6157] synthesizing module 'alu' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/alu.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'execution' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/execution.v:22]
+INFO: [Synth 8-6157] synthesizing module 'latch__parameterized1' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
 	Parameter BUS_DATA bound to: 76 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'latch__parameterized1' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
-INFO: [Synth 8-6157] synthesizing module 'memory_access' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memory_access.v:22]
-INFO: [Synth 8-6157] synthesizing module 'mask_a_byte' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mask_a_byte.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'mask_a_byte' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mask_a_byte.v:23]
-INFO: [Synth 8-6157] synthesizing module 'memoria_por_byte' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memoria_por_byte.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'memoria_por_byte' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memoria_por_byte.v:23]
-WARNING: [Synth 8-689] width (32) of port connection 'i_direcc' does not match port width (7) of module 'memoria_por_byte' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memory_access.v:53]
-INFO: [Synth 8-6157] synthesizing module 'signador' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/signador.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'signador' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/signador.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'memory_access' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memory_access.v:22]
-INFO: [Synth 8-6157] synthesizing module 'latch__parameterized2' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'latch__parameterized1' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memory_access' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memory_access.v:22]
+INFO: [Synth 8-6157] synthesizing module 'mask_a_byte' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mask_a_byte.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mask_a_byte' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mask_a_byte.v:23]
+INFO: [Synth 8-6157] synthesizing module 'memoria_por_byte' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memoria_por_byte.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memoria_por_byte' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memoria_por_byte.v:23]
+WARNING: [Synth 8-689] width (32) of port connection 'i_direcc' does not match port width (7) of module 'memoria_por_byte' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memory_access.v:53]
+INFO: [Synth 8-6157] synthesizing module 'signador' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/signador.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'signador' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/signador.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'memory_access' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memory_access.v:22]
+INFO: [Synth 8-6157] synthesizing module 'latch__parameterized2' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
 	Parameter BUS_DATA bound to: 39 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'latch__parameterized2' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
-INFO: [Synth 8-6157] synthesizing module 'write_back' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/write_back.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'write_back' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/write_back.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mips.v:22]
-INFO: [Synth 8-6157] synthesizing module 'suod' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/suod.v:23]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/suod.v:191]
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/suod.v:179]
-INFO: [Synth 8-6155] done synthesizing module 'suod' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/suod.v:23]
-INFO: [Synth 8-6157] synthesizing module 'separador_bytes' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/separador_bytes.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'separador_bytes' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/separador_bytes.v:23]
-INFO: [Synth 8-6157] synthesizing module 'uart' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_top.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'latch__parameterized2' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v:23]
+INFO: [Synth 8-6157] synthesizing module 'write_back' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/write_back.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'write_back' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/write_back.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'mips' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mips.v:22]
+INFO: [Synth 8-6157] synthesizing module 'suod' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/suod.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/suod.v:191]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/suod.v:179]
+INFO: [Synth 8-6155] done synthesizing module 'suod' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/suod.v:23]
+INFO: [Synth 8-6157] synthesizing module 'separador_bytes' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/separador_bytes.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'separador_bytes' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/separador_bytes.v:23]
+INFO: [Synth 8-6157] synthesizing module 'uart' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_top.v:2]
 	Parameter DVSR bound to: 326 - type: integer 
 	Parameter DVSR_BIT bound to: 9 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_mod_m_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'mod_m_counter' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_mod_m_counter.v:1]
 	Parameter N bound to: 9 - type: integer 
 	Parameter M bound to: 326 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_mod_m_counter.v:1]
-INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_rx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'mod_m_counter' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_mod_m_counter.v:1]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_rx.v:2]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_rx.v:2]
-INFO: [Synth 8-6157] synthesizing module 'fifo' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_rx.v:2]
+INFO: [Synth 8-6157] synthesizing module 'fifo' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v:2]
 	Parameter B bound to: 8 - type: integer 
 	Parameter W bound to: 4 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v:61]
-INFO: [Synth 8-6155] done synthesizing module 'fifo' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v:2]
-INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_tx.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'fifo' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_tx.v:2]
 	Parameter DBIT bound to: 8 - type: integer 
 	Parameter SB_TICK bound to: 16 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_tx.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_top.v:2]
-INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_tx.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_top.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/top.v:23]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.161 . Memory (MB): peak = 1534.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.221 . Memory (MB): peak = 1532.520 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [d:/Downloads/asd/FPGA-MIPS.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
-Finished Parsing XDC File [d:/Downloads/asd/FPGA-MIPS.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
-Parsing XDC File [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/constrs_1/new/contrain.xdc]
-Finished Parsing XDC File [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/constrs_1/new/contrain.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Downloads/asd/FPGA-MIPS/Mips.srcs/constrs_1/new/contrain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [d:/Repos/fpgaUART_MIPS/UART_MIPS.gen/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Finished Parsing XDC File [d:/Repos/fpgaUART_MIPS/UART_MIPS.gen/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'clk_wiz'
+Parsing XDC File [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/constrs_1/imports/new/contrain.xdc]
+Finished Parsing XDC File [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/constrs_1/imports/new/contrain.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/constrs_1/imports/new/contrain.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1534.676 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1532.520 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1534.676 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1532.520 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property IO_BUFFER_TYPE = NONE for i_clk. (constraint file  d:/Downloads/asd/FPGA-MIPS.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
-Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk. (constraint file  d:/Downloads/asd/FPGA-MIPS.gen/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
+Applied set_property IO_BUFFER_TYPE = NONE for i_clk. (constraint file  d:/Repos/fpgaUART_MIPS/UART_MIPS.gen/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for i_clk. (constraint file  d:/Repos/fpgaUART_MIPS/UART_MIPS.gen/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property KEEP_HIERARCHY = SOFT for clk_wiz. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'suod'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg_reg' in module 'uart_rx'
@@ -220,7 +220,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encod
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg_reg' using encoding 'sequential' in module 'uart_tx'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:27 ; elapsed = 00:00:28 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -296,7 +296,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:04 ; elapsed = 00:01:06 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -318,13 +318,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:09 ; elapsed = 00:01:12 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:14 ; elapsed = 00:01:17 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Timing Optimization : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -345,7 +345,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:23 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Technology Mapping : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1532.520 ; gain = 238.242
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -363,37 +363,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished IO Insertion : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1536.137 ; gain = 241.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:28 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:30 ; elapsed = 00:01:33 . Memory (MB): peak = 1536.137 ; gain = 241.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1536.137 ; gain = 241.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:31 ; elapsed = 00:01:35 . Memory (MB): peak = 1536.137 ; gain = 241.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1536.137 ; gain = 241.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1536.137 ; gain = 241.859
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -428,18 +428,18 @@ Report Cell Usage:
 |16    |OBUF     |    21|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1536.137 ; gain = 241.859
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:14 ; elapsed = 00:01:26 . Memory (MB): peak = 1534.676 ; gain = 241.496
-Synthesis Optimization Complete : Time (s): cpu = 00:01:27 ; elapsed = 00:01:30 . Memory (MB): peak = 1534.676 ; gain = 241.496
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:18 ; elapsed = 00:01:32 . Memory (MB): peak = 1536.137 ; gain = 241.859
+Synthesis Optimization Complete : Time (s): cpu = 00:01:32 ; elapsed = 00:01:35 . Memory (MB): peak = 1536.137 ; gain = 241.859
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1546.277 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.181 . Memory (MB): peak = 1550.344 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 2904 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1550.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1557.051 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 6 instances were transformed.
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
@@ -449,7 +449,7 @@ Synth Design complete, checksum: a2e880bf
 INFO: [Common 17-83] Releasing license: Synthesis
 100 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:37 . Memory (MB): peak = 1550.980 ; gain = 257.801
-INFO: [Common 17-1381] The checkpoint 'C:/Users/lihue/project_4/project_4.runs/synth_1/top.dcp' has been generated.
+synth_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:42 . Memory (MB): peak = 1557.051 ; gain = 262.773
+INFO: [Common 17-1381] The checkpoint 'D:/Repos/fpgaUART_MIPS/UART_MIPS.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May 29 18:10:36 2023...
+INFO: [Common 17-206] Exiting Vivado at Thu Jul  6 17:23:14 2023...

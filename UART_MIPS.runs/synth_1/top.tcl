@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/lihue/project_4/project_4.runs/synth_1/top.tcl"
+  variable script "D:/Repos/fpgaUART_MIPS/UART_MIPS.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,6 +70,7 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
+set_param chipscope.maxJobs 2
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -77,51 +78,51 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/lihue/project_4/project_4.cache/wt [current_project]
-set_property parent.project_path C:/Users/lihue/project_4/project_4.xpr [current_project]
+set_property webtalk.parent_dir D:/Repos/fpgaUART_MIPS/UART_MIPS.cache/wt [current_project]
+set_property parent.project_path D:/Repos/fpgaUART_MIPS/UART_MIPS.xpr [current_project]
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/lihue/AppData/Roaming/Xilinx/Vivado/2022.1/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
-set_property ip_output_repo c:/Users/lihue/project_4/project_4.cache/ip [current_project]
+set_property ip_output_repo d:/Repos/fpgaUART_MIPS/UART_MIPS.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/alu.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/alu_control.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/execution.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/forwarding_unit.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/hazard_unit.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/instruction_decode.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/instruction_fetch.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mask_a_byte.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memoria_de_instruccion.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memoria_por_byte.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/memory_access.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mips.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mod_control.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/mux.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/register_file.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/separador_bytes.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/signador.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/sing_extender.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/sumador.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/suod.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_mod_m_counter.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_rx.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_top.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_tx.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/write_back.v
-  D:/Downloads/asd/FPGA-MIPS/Mips.srcs/sources_1/new/top.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/alu.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/alu_control.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/execution.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/forwarding_unit.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/hazard_unit.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/instruction_decode.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/instruction_fetch.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/alu/FPGA-ALU.srcs/sources_1/new/latch.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mask_a_byte.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memoria_de_instruccion.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memoria_por_byte.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/memory_access.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mips.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mod_control.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/mux.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/register_file.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/separador_bytes.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/signador.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/sing_extender.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/sumador.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/suod.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_fifo.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_mod_m_counter.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_rx.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_top.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/FPGA-UART/fpga-uart.srcs/sources_1/new/uart_tx.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/write_back.v
+  D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/sources_1/imports/sources_1/new/top.v
 }
-read_ip -quiet D:/Downloads/asd/FPGA-MIPS/Mips.srcs/ip/clk_wiz_0/clk_wiz_0.xci
-set_property used_in_implementation false [get_files -all d:/Downloads/asd/FPGA-MIPS.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_board.xdc]
-set_property used_in_implementation false [get_files -all d:/Downloads/asd/FPGA-MIPS.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc]
-set_property used_in_implementation false [get_files -all d:/Downloads/asd/FPGA-MIPS.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
+read_ip -quiet D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0.xci
+set_property used_in_implementation false [get_files -all d:/Repos/fpgaUART_MIPS/UART_MIPS.gen/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0_board.xdc]
+set_property used_in_implementation false [get_files -all d:/Repos/fpgaUART_MIPS/UART_MIPS.gen/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0.xdc]
+set_property used_in_implementation false [get_files -all d:/Repos/fpgaUART_MIPS/UART_MIPS.gen/clk_wiz_0/ip/clk_wiz_0/clk_wiz_0_ooc.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -132,12 +133,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Downloads/asd/FPGA-MIPS/Mips.srcs/constrs_1/new/contrain.xdc
-set_property used_in_implementation false [get_files D:/Downloads/asd/FPGA-MIPS/Mips.srcs/constrs_1/new/contrain.xdc]
+read_xdc D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/constrs_1/imports/new/contrain.xdc
+set_property used_in_implementation false [get_files D:/Repos/fpgaUART_MIPS/UART_MIPS.srcs/constrs_1/imports/new/contrain.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/lihue/project_4/project_4.srcs/utils_1/imports/synth_1/top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/lihue/UART_MIPS/UART_MIPS.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

@@ -210,6 +210,11 @@ def erase_program(flags:Flags):
     flags.habemus_file = False
     flags.ready_to_send = False
     text_area.delete(1.0, tk.END)
+    for i in range(0,31):
+        registers_frame.winfo_children()[i].config(text="R" + str(i))
+        if i < 8:
+            memory_frame.winfo_children()[i].config(text="R" + str(i))
+    PC_frame.config(text="")
 
 def Simpletoggle():
     flags.hex_dec = not flags.hex_dec
@@ -256,7 +261,7 @@ send_button.place(x=80 ,y=440)
 
 PC_label = tk.Label(main_window,text="PC:", background="lightblue")
 PC_label.place(x=320,y=30)
-PC_frame = tk.Label(width=5,height=1,bg="white",fg="black",relief=tk.SUNKEN,bd=3,justify="center",text="1")
+PC_frame = tk.Label(width=5,height=1,bg="white",fg="black",relief=tk.SUNKEN,bd=3,justify="center",text="")
 PC_frame.place(x=350,y=30)
 PC_button = tk.Button(main_window,text="Get", command=get_PC)
 PC_button.place(x=400,y=27)
