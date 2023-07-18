@@ -4,7 +4,7 @@
 [PC = 12] NOP            ; no hacer nada
 [PC = 16] NOP            ; no hacer nada
 [PC = 20] NOP            ; no hacer nada
-[PC = 24] J    36        ; saltar a la dirección con pc = 36
+[PC = 24] J    10        ; saltar a la dirección con pc = 4 * 10 = 40 (HALT)
 [PC = 28] ADDI R3,R1,100 ; r3 <- r1 + 100 = 28 + 100 = 128 = 0x0080
 [PC = 32] JR   R2        ; saltar a la dirección con pc = r2 (8)
 [PC = 36] HALT           ; fin del programa
