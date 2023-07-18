@@ -6,7 +6,7 @@
 [PC = 20] ANDI R4,R3,11  ; r4 <- r3 & 11 = 2 = 0x0002
 [PC = 24] ADDI R4,R4,272 ; r4 <- r4 + 272 = 2 + 272 = 274 = 0x004a
 [PC = 28] SH   R4,12(R0) ; mem(r0 + 12B) <- r4 = 0x004a
-[PC = 32] ORI  R5,R4,10  ; r5 <- r4 & 10 = 2 = 0x0002
+[PC = 32] ORI  R5,R4,10  ; r5 <- r4 & 10 = 282 = 0x011a
 [PC = 36] SW   R5,24(R0) ; mem(r0 + 24B) <- r5 = 2 = 0x0002
 [PC = 40] BEQ  R5,R4,2   ; si r4 == 2 saltar 2 instrucciones
 [PC = 44] ADDI R6,R0,20  ; r6 <- r0 + 20 = 20 = 0x0014
